@@ -1,0 +1,29 @@
+.flower-container {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.petal {
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  background-image: url('flower-petals.png'); /* Replace with your own image */
+  background-size: cover;
+  animation: fall 10s infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+    opacity: 100;
+  }
+  50% {
+    opacity: 100;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 100;
+  }
+}
